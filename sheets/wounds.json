@@ -1,0 +1,10 @@
+{
+  "sheet": "wounds",
+  "about": "Project Zomboid's wound types, rolled when a shambler's hit lands on the local player. chance is the share of hits giving that wound (column sums to 1). infectChance follows Zomboid's rule of thumb: scratches rarely, lacerations sometimes, bites always.",
+  "columns": ["id", "label", "chance", "infectChance", "bleeds"],
+  "rows": [
+    {"id": "scratch",    "label": "Scratched", "chance": 0.60, "infectChance": 0.07, "bleeds": false},
+    {"id": "laceration", "label": "Lacerated", "chance": 0.25, "infectChance": 0.25, "bleeds": true},
+    {"id": "bite",       "label": "Bitten",    "chance": 0.15, "infectChance": 1.00, "bleeds": true}
+  ]
+}

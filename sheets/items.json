@@ -1,0 +1,10 @@
+{
+  "sheet": "items",
+  "about": "Project Zomboid items brought into Valheim. Stats, names and icons are read at runtime from the player's own Project Zomboid install (media/scripts, Translate, texturepacks); the Valheim base prefab gives the model and handling. fallbackName is shown only if the player's copy has no name for the item.",
+  "columns": ["id", "pzItem", "prefab", "valheimBase", "kind", "fallbackName", "weightScale", "damageScale", "foodScale", "crateAmount", "dropChance"],
+  "rows": [
+    {"id": "bat",     "pzItem": "Base.BaseballBat", "prefab": "Zombheim_BaseballBat", "valheimBase": "Club",            "kind": "weapon",  "fallbackName": "Baseball Bat", "weightScale": 1.2, "damageScale": 14.0, "foodScale": 0.0, "crateAmount": 1, "dropChance": 0.03},
+    {"id": "beans",   "pzItem": "Base.TinnedBeans", "prefab": "Zombheim_TinnedBeans", "valheimBase": "QueensJam",       "kind": "food",    "fallbackName": "Beans",        "weightScale": 1.0, "damageScale": 0.0,  "foodScale": 0.9, "crateAmount": 2, "dropChance": 0.25},
+    {"id": "bandage", "pzItem": "Base.Bandage",     "prefab": "Zombheim_Bandage",     "valheimBase": "MeadHealthMinor", "kind": "medical", "fallbackName": "Bandage",      "weightScale": 1.0, "damageScale": 0.0,  "foodScale": 0.0, "crateAmount": 2, "dropChance": 0.15}
+  ]
+}

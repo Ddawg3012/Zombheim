@@ -1,0 +1,14 @@
+{
+  "sheet": "systems",
+  "about": "Every game system the mashup touches. hooks lists hooks sheet ids; data lists the sheets it reads.",
+  "columns": ["id", "pzRule", "trigger", "hooks", "data"],
+  "rows": [
+    {"id": "content",   "pzRule": "Zomboid items exist in the world, read from the player's copy", "trigger": "prefab registration", "hooks": ["znetscene_awake", "objectdb_awake", "objectdb_copy"], "data": ["items", "enemies"]},
+    {"id": "start",     "pzRule": "This is how you died: a looted start with a few supplies",      "trigger": "first spawn of a character in a world", "hooks": ["player_spawned"], "data": ["items", "tuning"]},
+    {"id": "noise",     "pzRule": "Noise draws the dead",                                           "trigger": "tick", "hooks": [], "data": ["enemies", "tuning"]},
+    {"id": "horde",     "pzRule": "The dead come out in numbers after dark",                        "trigger": "nightfall", "hooks": [], "data": ["waves", "enemies", "tuning"]},
+    {"id": "wounds",    "pzRule": "Scratches, lacerations and bites; bleeding until bandaged",      "trigger": "local player damaged by a shambler", "hooks": ["character_applydamage", "player_consume_pre", "player_consume_post"], "data": ["wounds", "items", "tuning"]},
+    {"id": "infection", "pzRule": "Knox infection: silent, incurable, and you rise when you die",   "trigger": "infecting wound", "hooks": ["player_death"], "data": ["infection", "enemies", "tuning"]},
+    {"id": "melty",     "pzRule": "-",                                                              "trigger": "game start / world loaded", "hooks": [], "data": ["tuning"]}
+  ]
+}

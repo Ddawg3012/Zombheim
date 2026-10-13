@@ -1,0 +1,6 @@
+.deps/
+bin/
+obj/
+dist/
+tests/ParserProbe/bin/
+tests/ParserProbe/obj/

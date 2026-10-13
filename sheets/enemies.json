@@ -1,0 +1,8 @@
+{
+  "sheet": "enemies",
+  "about": "The Knox Event's dead in Valheim. Body and animations come from Valheim's Draugr; behaviour (slow shamble, poor sight, sharp hearing, infectious wounds) follows Project Zomboid's rules. drops lists items sheet ids.",
+  "columns": ["id", "prefab", "valheimBase", "displayName", "walkSpeed", "runSpeed", "healthScale", "viewRange", "hearRange", "meleeOnly", "drops"],
+  "rows": [
+    {"id": "shambler", "prefab": "Zombheim_Shambler", "valheimBase": "Draugr", "displayName": "Shambler", "walkSpeed": 1.1, "runSpeed": 2.6, "healthScale": 0.8, "viewRange": 14.0, "hearRange": 60.0, "meleeOnly": true, "drops": ["beans", "bandage", "bat"]}
+  ]
+}

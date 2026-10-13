@@ -1,0 +1,10 @@
+{
+  "sheet": "waves",
+  "about": "Night hordes. Every player's game spawns its own waves around that player, so the horde grows with the number of players. Delays count from nightfall.",
+  "columns": ["id", "delaySeconds", "count", "radiusMin", "radiusMax", "enemy"],
+  "rows": [
+    {"id": "dusk",     "delaySeconds": 5,   "count": 3, "radiusMin": 45.0, "radiusMax": 65.0, "enemy": "shambler"},
+    {"id": "midnight", "delaySeconds": 150, "count": 4, "radiusMin": 45.0, "radiusMax": 70.0, "enemy": "shambler"},
+    {"id": "deadhour", "delaySeconds": 330, "count": 5, "radiusMin": 50.0, "radiusMax": 75.0, "enemy": "shambler"}
+  ]
+}

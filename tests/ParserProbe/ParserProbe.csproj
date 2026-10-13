@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><Nullable>disable</Nullable></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Zombheim"><HintPath>../../src/Zombheim/bin/Release/net472/Zombheim.dll</HintPath></Reference>
+    <Reference Include="BepInEx"><HintPath>../../.deps/bepinex/BepInEx/core/BepInEx.dll</HintPath></Reference>
+    <Reference Include="UnityEngine"><HintPath>../../.deps/unity/lib/net45/UnityEngine.dll</HintPath></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>../../.deps/unity/lib/net45/UnityEngine.CoreModule.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

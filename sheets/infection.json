@@ -1,0 +1,11 @@
+{
+  "sheet": "infection",
+  "about": "Knox infection stages after an infecting wound (real seconds). It is silent until the first moodle, has no cure, and when you die infected you rise as a shambler where you fell.",
+  "columns": ["id", "afterSeconds", "drainPerSecond", "message"],
+  "rows": [
+    {"id": "incubating", "afterSeconds": 0,   "drainPerSecond": 0.0, "message": "-"},
+    {"id": "queasy",     "afterSeconds": 240, "drainPerSecond": 0.0, "message": "Queasy. Something in that wound isn't right."},
+    {"id": "nauseous",   "afterSeconds": 420, "drainPerSecond": 0.2, "message": "Nauseous. The infection spreads."},
+    {"id": "fever",      "afterSeconds": 600, "drainPerSecond": 0.6, "message": "Fever. The Knox infection is taking hold."}
+  ]
+}

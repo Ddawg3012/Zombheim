@@ -1,0 +1,15 @@
+{
+  "sheet": "hooks",
+  "about": "Harmony patches into Valheim. Types and methods are resolved by name at runtime so the mod tolerates Valheim updates; a hook that can't be found is logged and skipped. handler is Class.Method in the plugin.",
+  "columns": ["id", "type", "method", "kind", "handler", "system"],
+  "rows": [
+    {"id": "znetscene_awake",       "type": "ZNetScene", "method": "Awake",       "kind": "prefix",  "handler": "Content.OnZNetSceneAwake", "system": "content"},
+    {"id": "objectdb_awake",        "type": "ObjectDB",  "method": "Awake",       "kind": "prefix",  "handler": "Content.OnObjectDBAwake",  "system": "content"},
+    {"id": "objectdb_copy",         "type": "ObjectDB",  "method": "CopyOtherDB", "kind": "postfix", "handler": "Content.OnObjectDBCopy",   "system": "content"},
+    {"id": "player_spawned",        "type": "Player",    "method": "OnSpawned",   "kind": "postfix", "handler": "StartSystem.OnPlayerSpawned", "system": "start"},
+    {"id": "character_applydamage", "type": "Character", "method": "ApplyDamage", "kind": "postfix", "handler": "Wounds.OnApplyDamage",     "system": "wounds"},
+    {"id": "player_consume_pre",    "type": "Player",    "method": "ConsumeItem", "kind": "prefix",  "handler": "Wounds.BeforeConsume",     "system": "wounds"},
+    {"id": "player_consume_post",   "type": "Player",    "method": "ConsumeItem", "kind": "postfix", "handler": "Wounds.AfterConsume",      "system": "wounds"},
+    {"id": "player_death",          "type": "Player",    "method": "OnDeath",     "kind": "prefix",  "handler": "Infection.OnPlayerDeath",  "system": "infection"}
+  ]
+}

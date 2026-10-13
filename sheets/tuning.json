@@ -1,0 +1,19 @@
+{
+  "sheet": "tuning",
+  "about": "Single numbers used by the systems. usedBy names the systems sheet row that reads it.",
+  "columns": ["id", "value", "unit", "usedBy"],
+  "rows": [
+    {"id": "noiseHearingMultiplier", "value": 2.0,  "unit": "x player noise range", "usedBy": "noise"},
+    {"id": "noiseTickSeconds",       "value": 1.0,  "unit": "s",       "usedBy": "noise"},
+    {"id": "maxShamblersNearby",     "value": 24,   "unit": "count",   "usedBy": "horde"},
+    {"id": "nearbyRadius",           "value": 90.0, "unit": "m",       "usedBy": "horde"},
+    {"id": "stragglerDelaySeconds",  "value": 40.0, "unit": "s",       "usedBy": "start"},
+    {"id": "stragglerCount",         "value": 2,    "unit": "count",   "usedBy": "start"},
+    {"id": "stragglerRadius",        "value": 45.0, "unit": "m",       "usedBy": "start"},
+    {"id": "crateDistance",          "value": 3.0,  "unit": "m",       "usedBy": "start"},
+    {"id": "bleedDrainPerSecond",    "value": 0.3,  "unit": "hp/s",    "usedBy": "wounds"},
+    {"id": "bleedMaxSeconds",        "value": 90.0, "unit": "s",       "usedBy": "wounds"},
+    {"id": "bandageHeal",            "value": 15.0, "unit": "hp",      "usedBy": "wounds"},
+    {"id": "riseDelaySeconds",       "value": 4.0,  "unit": "s",       "usedBy": "infection"}
+  ]
+}
